@@ -7,19 +7,20 @@ void addQue(int);
 int v,n,f=0,r=0,visited[10]={0},a[10][10],que[10]={0};
 int main()
 {
+    printf("\tBFS TRAVERSAL\n\n");
 	input();
 	printf("\nEnter the starting vertex: \n");
 	scanf("%d",&v);
-	printf("\nBFS traversal: \n");
+	printf("\nBFS traversal Path: \n");
 	bfs(v);
 	return 0;
 }
 void input()
 {
 	int i, j;
-	printf("\nenter the number of nodes: ");
+	printf("\nEnter the number of nodes: ");
 	scanf("%d",&n);
-	printf("\nenter the adjacent matrix: \n");
+	printf("\nEnter the adjacent matrix: \n");
 	for(i=1;i<=n;i++)
 		for(j=1;j<=n;j++)
    			scanf("%d",&a[i][j]);
